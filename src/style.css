@@ -1,0 +1,176 @@
+/* التنسيق الأساسي للفورم */
+.form-card {
+  max-width: 440px;
+  margin: 50px auto 20px;
+  background: #efd8e3; /* لون خلفية الورقة الأصلي */
+  text-align: left;
+  padding: 40px 35px;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(130, 51, 72, 0.12); /* ظلال ناعمة وفخمة */
+}
+
+.form-title {
+  text-align: center;
+  color: #823348;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* تنسيق العناوين التوضيحية */
+label {
+  color: #7a6e75;
+  display: block;
+  margin: 20px 0 8px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+/* حقول الإدخال والـ Select */
+input, select {
+  display: block;
+  padding: 12px 16px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ffe4e1; 
+  border-radius: 12px; 
+  color: #555555; 
+  background-color: #fff9f9; 
+  font-size: 0.95rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #cfafbf; 
+  background-color: #ffffff; 
+  box-shadow: 0 0 12px rgba(207, 175, 191, 0.4); 
+} 
+
+/* الأزرار */
+.submit {
+  text-align: center;
+  margin-top: 25px;
+}
+
+button {
+  background: #cfafbf;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 12px rgba(207, 175, 191, 0.4);
+}
+
+button:hover {
+  background: #823348; 
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(130, 51, 72, 0.3);
+} 
+
+/* الشروط والأحكام */
+.terms {
+  display: flex;
+  align-items: center; 
+  margin: 25px 0 15px;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px; 
+  cursor: pointer;
+  accent-color: #823348;
+  display: inline-block; 
+}
+
+.terms label {
+  display: inline-block;
+  margin: 0; 
+  color: #666;
+  font-size: 0.8rem;
+  cursor: pointer;
+} 
+
+/* الحبوب (Skills Pills) */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  background: #fffdf9; 
+  border: 1.5px solid #cfafbf; 
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #823348; 
+  cursor: pointer;
+  transition: all 0.2s ease;
+} 
+
+.pill:hover {
+  background: #823348;
+  color: #ffffff;
+  border-color: #823348;
+}
+
+/* الأخطاء */
+.error {
+  color: #823348; 
+  margin-top: 6px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* التوقيع الفخم made by little coder janawi */
+.footer-credit {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #8e8e8e;
+  letter-spacing: 1.5px;
+  text-transform: lowercase;
+}
+
+.footer-credit span {
+  color: #823348;
+  font-weight: bold;
+}
+
+/* صندوق العرض السفلي */
+.preview-box {
+  max-width: 440px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+p {
+  color: #777;
+  font-size: 0.85rem;
+  margin-top: 6px;
+  font-family: monospace; 
+} 
+/* تحسينات إضافية للشاشات الصغير جداً */
+@media (max-width: 480px) {
+  .form-card {
+    margin: 20px 15px; /* تقليل الهوامش الخارجية */
+    padding: 25px 20px; /* تقليل الحشوة الداخلية لتوفر مساحة أكبر للكتابة */
+  }
+
+  .form-title {
+    font-size: 1.3rem; /* تصغير العنوان قليلاً */
+  }
+}
